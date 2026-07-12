@@ -1,0 +1,63 @@
+/* Google Cairo Font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-fakhany-dark: #0a1428;
+  --color-fakhany-green: #3d7a44;
+  --color-fakhany-greenHover: #2e5b33;
+  --color-fakhany-gold: #c29a53;
+  --color-fakhany-goldLight: #dfc28d;
+  --color-fakhany-accent: #c29a53;
+  
+  --font-cairo: 'Cairo', sans-serif;
+}
+
+html {
+  font-family: 'Cairo', sans-serif;
+  scroll-behavior: smooth;
+  direction: rtl; /* Set default text direction to Arabic (Right-to-Left) */
+}
+
+body {
+  background-color: #0a1428; /* Dark Blue */
+  color: #ffffff;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0a1428;
+}
+::-webkit-scrollbar-thumb {
+  background: #c29a53;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dfc28d;
+}
+
+/* Additional utility classes for premium UI */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #dfc28d 0%, #c29a53 50%, #8a6521 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #dfc28d 0%, #c29a53 100%);
+}
+
+.gold-border {
+  border-image: linear-gradient(to right, #dfc28d, #c29a53) 1;
+}
+
+/* Prevent image dragging to improve slider UX */
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
