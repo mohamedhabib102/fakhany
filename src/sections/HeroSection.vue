@@ -43,11 +43,9 @@
             <!-- Button Container: Mobile (justify-start = RTL Right), Desktop (justify-end = RTL Left) -->
             <div class="w-full md:flex-1 flex justify-start md:justify-end mt-8 md:mt-0 px-2 md:px-0 z-20">
               <AnimatedElement direction="left" trigger="mount" :delay="900">
-                <button 
-                  class="bg-[#3b6045] text-white text-sm md:text-lg px-8 py-2.5 font-bold rounded-full border-2 border-[#c29a53] hover:bg-[#2c4a34] transition-colors shadow-lg"
-                >
+                <a href="https://wa.me/201027227796" target="_blank"  class="bg-[#3b6045] text-white block text-sm md:text-lg px-8 py-2.5 font-bold rounded-full border-2 border-[#c29a53] hover:bg-[#2c4a34] transition-colors shadow-lg">
                   تسوق الآن
-                </button>
+                </a>
               </AnimatedElement>
             </div>
 
