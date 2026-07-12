@@ -3,6 +3,15 @@
     <!-- Subtle light overlay to ensure text readability without darkening the whole image -->
     <div class="absolute inset-0 bg-white/10 z-0"></div>
 
+    <!-- Static Button -->
+    <div class="absolute bottom-8 right-6 md:bottom-12 md:right-auto md:left-12 z-30">
+      <AnimatedElement direction="up" trigger="mount" :delay="900">
+        <a href="https://wa.me/201027227796" target="_blank" class="bg-[#3b6045] text-white block text-sm md:text-lg px-8 py-2.5 font-bold rounded-full border-2 border-[#c29a53] hover:bg-[#2c4a34] transition-colors shadow-lg">
+          تسوق الآن
+        </a>
+      </AnimatedElement>
+    </div>
+
     <swiper
       :slides-per-view="1"
       :space-between="0"
@@ -24,7 +33,7 @@
           </div>
 
           <!-- Center Image & Bottom Button (Flexbox without absolute) -->
-          <div class="grow flex flex-col md:flex-row w-full pb-6 md:pb-10 items-center md:items-end justify-end">
+          <div class="grow flex flex-col md:flex-row w-full pb-20 md:pb-10 items-center md:items-end justify-end">
             
             <!-- Desktop Left Spacer (RTL Right side) to keep image centered -->
             <div class="hidden md:block md:flex-1"></div>
@@ -40,14 +49,8 @@
               </AnimatedElement>
             </div>
 
-            <!-- Button Container: Mobile (justify-start = RTL Right), Desktop (justify-end = RTL Left) -->
-            <div class="w-full md:flex-1 flex justify-start md:justify-end mt-8 md:mt-0 px-2 md:px-0 z-20">
-              <AnimatedElement direction="left" trigger="mount" :delay="900">
-                <a href="https://wa.me/201027227796" target="_blank"  class="bg-[#3b6045] text-white block text-sm md:text-lg px-8 py-2.5 font-bold rounded-full border-2 border-[#c29a53] hover:bg-[#2c4a34] transition-colors shadow-lg">
-                  تسوق الآن
-                </a>
-              </AnimatedElement>
-            </div>
+            <!-- Desktop Right Spacer (RTL Left side) to keep image centered -->
+            <div class="hidden md:block md:flex-1"></div>
 
           </div>
 

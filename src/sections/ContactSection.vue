@@ -1,5 +1,5 @@
 <template>
-  <section id="contact" class="bg-[#faf9f6] text-[#0a1428] py-16 px-6 md:px-12 select-none border-t border-gray-200">
+  <section id="contact" class="bg-[#faf9f6] text-fakhany-dark py-16 px-6 md:px-12 select-none border-t border-gray-200">
     <div 
       class="max-w-6xl mx-auto w-full"
     >
