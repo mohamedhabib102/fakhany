@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-[#1b223d] text-white py-12 px-6 flex flex-col items-center h-full w-full overflow-hidden">
+  <section id="best-seller" class="bg-[#1b223d] text-white py-12 px-6 flex flex-col items-center h-full w-full overflow-hidden">
     <div class="w-full text-center max-w-350">
       <AnimatedElement direction="up" :delay="100" trigger="mount">
         <h2 class="text-2xl md:text-3xl font-bold mb-10 tracking-wide font-cairo text-white">
