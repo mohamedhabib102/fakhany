@@ -3,9 +3,9 @@
     <div class="max-w-[1400px] mx-auto relative z-10">
       
       <AnimatedElement direction="down" :delay="100">
-        <h2 class="text-3xl md:text-4xl font-bold text-center text-[#1b223d] mb-12 font-cairo">
+        <SectionTitle theme="dark" align="center">
           آراء العملاء
-        </h2>
+      </SectionTitle>
       </AnimatedElement>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -46,6 +46,7 @@
 <script setup>
 import AnimatedElement from '../components/AnimatedElement.vue'
 import { Star as StarIcon } from 'lucide-vue-next'
+import SectionTitle from '../components/SectionTitle.vue'
 
 const reviews = [
   { name: 'أحمد محمود', text: 'فواكه طازجة جداً وتوصيل سريع في نفس اليوم. التغليف كان ممتازاً ووصلتني الفواكه مبردة وبأفضل جودة.' },

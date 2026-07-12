@@ -32,6 +32,6 @@ const colorClass = computed(() => {
 })
 
 const lineClass = computed(() => {
-  return props.theme === 'dark' ? 'bg-fakhany-green' : 'bg-fakhany-gold'
+  return props.theme === 'dark' ? 'bg-fakhany-gold' : 'bg-fakhany-green'
 })
 </script>

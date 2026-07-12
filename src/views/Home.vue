@@ -24,6 +24,7 @@
     </main>
     <TestimonialsSection />
     <PricingSection/>
+    <!-- <ContactSection/> -->
 
     <!-- Footer Area -->
     <Footer />
@@ -42,4 +43,5 @@ import AboutSection from '../sections/AboutSection.vue'       // Features / لم
 import FeaturesSection from '../sections/FeaturesSection.vue'   // Offers / عروض خاصة banner
 import TestimonialsSection from '../sections/TestimonialsSection.vue'
 import PricingSection from '../sections/PricingSection.vue'
+import ContactSection from '../sections/ContactSection.vue'
 </script>
