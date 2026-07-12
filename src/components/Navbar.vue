@@ -27,7 +27,7 @@
     <!-- Left Side in RTL (Last in HTML): Links and Shopping Cart Icon -->
     <div class="flex-1 flex items-center justify-end gap-4 md:gap-6">
       <div class="hidden md:flex items-center gap-6 text-[#5a4835] font-semibold text-sm md:text-base">
-        <a href="#seasonal" class="hover:text-fakhany-gold transition-colors duration-200">الفواكه الموسمية</a>
+        <a href="#pricing" class="hover:text-fakhany-gold transition-colors duration-200">الفواكه الموسمية</a>
         <a href="#best-sellers" class="hover:text-fakhany-gold transition-colors duration-200">الأكثر مبيعاً</a>
       </div>
       <button class="text-fakhany-gold hover:text-fakhany-goldLight transition-colors relative cursor-pointer focus:outline-none">

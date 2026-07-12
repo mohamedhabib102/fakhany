@@ -1,9 +1,9 @@
 <template>
   <section class="bg-[#1b223d] text-white py-12 px-6 flex flex-col items-center h-full w-full overflow-hidden">
-    <div class="w-full text-center max-w-[1400px]">
+    <div class="w-full text-center max-w-350">
       <AnimatedElement direction="up" :delay="100" trigger="mount">
         <h2 class="text-2xl md:text-3xl font-bold mb-10 tracking-wide font-cairo text-white">
-          'Best Sellers
+          Best Sellers
         </h2>
       </AnimatedElement>
 
@@ -11,17 +11,25 @@
       <div class="w-full mt-4">
         <AnimatedElement direction="up" :delay="300">
           <swiper
-            :slides-per-view="3"
+            :slides-per-view="2"
             :space-between="20"
             :loop="true"
             :autoplay="{ delay: 3500, disableOnInteraction: false }"
             :modules="[Autoplay]"
+            :breakpoints="{
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 3,
+              }
+            }"
             class="w-full py-4 cursor-grab active:cursor-grabbing"
           >
             <swiper-slide v-for="(product, index) in products" :key="index">
               <div class="flex flex-col items-center text-center group py-2">
                 <!-- Product Image (Pedestal) -->
-                <div class="w-24 sm:w-32 md:w-40 flex items-center justify-center relative mb-2">
+                <div class="w-35 sm:w-32 md:w-50 flex items-center justify-center relative mb-2">
                   <img 
                     :src="product.image" 
                     :alt="product.name" 
@@ -35,14 +43,14 @@
                 </h3>
 
                 <!-- Stars Rating -->
-                <div class="flex items-center gap-[2px] mb-2">
+                <div class="flex items-center gap-0.5 mb-2">
                   <span v-for="star in 5" :key="star" class="text-xs">
                     <StarIcon class="w-3 h-3 text-fakhany-gold fill-fakhany-gold" />
                   </span>
                 </div>
 
                 <!-- Price Box -->
-                <div class="border border-[#c29a53] bg-transparent px-3 py-0.5 text-xs md:text-sm font-bold text-[#c29a53] tracking-widest rounded-sm">
+                <div class="bg-white/10 px-3 py-0.5 text-xs md:text-sm font-bold text-[#c29a53] tracking-widest rounded-sm">
                   {{ product.price.replace('$', '') }}
                 </div>
               </div>
