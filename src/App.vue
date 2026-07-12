@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-fakhany-dark text-white font-cairo selection:bg-fakhany-gold selection:text-fakhany-dark" dir="rtl">
+  <div class="min-h-screen text-white font-cairo selection:bg-fakhany-gold selection:text-fakhany-dark" dir="rtl">
     <router-view />
   </div>
 </template>

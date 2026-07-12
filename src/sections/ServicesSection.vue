@@ -1,22 +1,18 @@
 <template>
   <section class="bg-[#1b223d] text-white py-12 px-6 flex flex-col items-center h-full w-full overflow-hidden">
-    <div class="w-full text-center max-w-350">
+    <div class="w-full text-center max-w-[1400px]">
       <AnimatedElement direction="up" :delay="100" trigger="mount">
         <h2 class="text-2xl md:text-3xl font-bold mb-10 tracking-wide font-cairo text-white">
-          الأكثر مبيعاً
+          'Best Sellers
         </h2>
       </AnimatedElement>
 
-      <!-- Products Slider (Multiple items) -->
+      <!-- Products Slider (Exactly 3 items visible) -->
       <div class="w-full mt-4">
         <AnimatedElement direction="up" :delay="300">
           <swiper
-            :slides-per-view="2"
+            :slides-per-view="3"
             :space-between="20"
-            :breakpoints="{
-              '640': { slidesPerView: 3, spaceBetween: 20 },
-              '1024': { slidesPerView: 4, spacespaceBetween: 30 }
-            }"
             :loop="true"
             :autoplay="{ delay: 3500, disableOnInteraction: false }"
             :modules="[Autoplay]"
@@ -25,7 +21,7 @@
             <swiper-slide v-for="(product, index) in products" :key="index">
               <div class="flex flex-col items-center text-center group py-2">
                 <!-- Product Image (Pedestal) -->
-                <div class="w-28 sm:w-36 md:w-44 flex items-center justify-center relative mb-4">
+                <div class="w-24 sm:w-32 md:w-40 flex items-center justify-center relative mb-2">
                   <img 
                     :src="product.image" 
                     :alt="product.name" 
@@ -34,20 +30,20 @@
                 </div>
 
                 <!-- Product Info -->
-                <h3 class="font-bold text-sm sm:text-base text-white mb-2 font-cairo">
+                <h3 class="font-bold text-sm sm:text-base text-white mb-1 font-cairo">
                   {{ product.name }}
                 </h3>
 
                 <!-- Stars Rating -->
-                <div class="flex items-center gap-[2px] mb-3">
+                <div class="flex items-center gap-[2px] mb-2">
                   <span v-for="star in 5" :key="star" class="text-xs">
                     <StarIcon class="w-3 h-3 text-fakhany-gold fill-fakhany-gold" />
                   </span>
                 </div>
 
                 <!-- Price Box -->
-                <div class="border border-[#c29a53] px-4 py-1 text-xs md:text-sm font-bold text-[#c29a53] tracking-widest rounded-sm">
-                  {{ product.price }}
+                <div class="border border-[#c29a53] bg-transparent px-3 py-0.5 text-xs md:text-sm font-bold text-[#c29a53] tracking-widest rounded-sm">
+                  {{ product.price.replace('$', '') }}
                 </div>
               </div>
             </swiper-slide>

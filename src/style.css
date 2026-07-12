@@ -21,8 +21,8 @@ html {
 }
 
 body {
-  background-color: #0a1428; /* Dark Blue */
-  color: #ffffff;
+  background-color: rgb(255, 255, 255); /* Dark Blue */
+  color: #000000;
 }
 
 /* Custom scrollbar */

@@ -10,8 +10,8 @@
 
       <!-- 2. Mid Grid Section (Best Sellers on Right, Why Choose Us on Left) -->
       <div class="max-w-350 w-full grid grid-cols-1 lg:grid-cols-2">
-        <AboutSection />
         <ServicesSection />
+        <AboutSection />
       </div>
 
       <!-- 3. Special Offers Banner -->
@@ -20,9 +20,9 @@
 
       
       <!-- 4. Testimonials -->
-      <TestimonialsSection />
       
     </main>
+    <TestimonialsSection />
     <PricingSection/>
 
     <!-- Footer Area -->
